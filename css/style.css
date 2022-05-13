@@ -5,6 +5,7 @@ body{
     font-family: 'Poppins', sans-serif;
     
 }
+/* starts the header part */
 .my_name{
     margin: 90px 0px 0px 90px;
 }
@@ -24,7 +25,7 @@ body{
     justify-content: center;
     width: 200px;
     height: 40px;
-    background-color: brown;
+    background-color: #E02C6D;
     border-radius: 50px;
 
 }
@@ -39,19 +40,40 @@ body{
 .nav-img{
     margin-top: 60px;
 }
+/* End of the header part */
+
+/* start the main section */
 main{
     display: flex;
     justify-content: center;
 }
 .all-collection{
     width: 80%;
-    height: 1500px;
+    height: 1880px;
     margin-top: 100px;
 
 }
 .popular-collection{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 60px;
+}
+.collection{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   width: 400px;
+   height: 520px;
+   display:grid;
+}
+.collection img{
+    width: 390px;
+    margin-left: 5px;
+
+}
+.description{
+    margin-top: 0px;
+}
+.img-details{
+    margin-left: 5px;
 }
 .type-name{
     text-align: center;
@@ -75,9 +97,20 @@ main{
 .img-details h4{
     margin: 0px;
 }
+.see-more{
+    display: flex;
+    color: #E02C6D;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-items: center;
+}
+
+/* end of the main section */
+
+/* start the footer section */
 footer{
     background-color: black;
-    height: 250px;
+    height: 300px;
 }
 .my-footer{
     text-align: center;
@@ -110,6 +143,9 @@ footer{
     color: white;
     margin-left: 10px;
 }
+/* End of the footer section */
+
+/* start the responsiveness for mobile phone  */
 @media (max-width:668px) {
     .my_name{
         font-size: 25px;
@@ -137,12 +173,24 @@ footer{
       
     }
     .all-collection{
-        height: 3700px;
+        height: 5400px;
+    }
+    .collection{
+        width: 340px;
+    }
+    .collection img{
+        width: 330px;
+        margin-left: 5px;
     }
     .my-footer{
         height: 400px;
     }
 }
+
+/* End of the responsiveness for mobile phone */
+
+
+/* start the responsiveness for tab */
 @media (min-width:669px) and (max-width:992px) {
     .my_name{
         font-size: 30px; 
@@ -167,12 +215,21 @@ footer{
     .popular-collection{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        justify-content: center;
       
     }
     .all-collection{
-        height: 2100px;
+        height: 3100px;
+    }
+    .collection{
+        width: 340px;
+        margin: 10px;
+    }
+    .collection img{
+        width: 330px;
     }
     .my-footer{
         height: 300px;
     }
 }
+/* End of the resonsiveness for tab */
